@@ -14,7 +14,7 @@ pip3 install requests
 ## Usage
 
 ```bash
-python3 word_morphosis.py <start word> <end word> [--test]
+python3 word_morphosis.py <start word> <end word> [--test] [--show_paths]
 ```
 The data is gathered from [five-letter-words](https://www.bestwordlist.com/5letterwords.txt)  
 The `test` flag uses all the words which only begin with 'A'

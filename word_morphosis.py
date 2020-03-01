@@ -3,12 +3,6 @@ import argparse
 from _collections import defaultdict, deque
 
 
-class PathNode:
-    def __init__(self, val):
-        self.val = val
-        self.next = []
-
-
 class Search:
     def __init__(self, start, end):
         self.start = start
@@ -112,6 +106,8 @@ if __name__ == '__main__':
     print(f'Number of paths found: {search_component.total_paths_length}')
 
     if args.show_paths:
-        print('Printing all the paths')
-        for path in search_component.read_paths():
-            print(path)
+        filename = f'PATHS: {args.start_word}->{args.end_word}.txt'
+        print('Printing all the paths in ', filename)
+        with open(filename, 'a') as the_file:
+            for path in search_component.read_paths():
+                the_file.write(str(path) + '\n')
