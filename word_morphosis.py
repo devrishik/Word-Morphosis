@@ -46,7 +46,7 @@ class Search:
     def search(self, graph, start=None, end=None):
         '''
         Do a Bi-directional BFS to find all routes
-        Todo: figure out how to not double count, for now paths stores all paths twice
+        Todo: figure out how to not double count
         :param start: str
         :param end: str
         :param graph: dict

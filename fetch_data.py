@@ -1,5 +1,4 @@
 import requests
-import argparse
 
 from _collections import defaultdict
 
